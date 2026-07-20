@@ -5,19 +5,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * @see https://github.com/vova07/yii2-imperavi-widget
+ * @see https://github.com/aliadinov/yii2-imperavi-widget
  */
 
-namespace vova07\imperavi\tests\functional;
+namespace aliadinov\imperavi\tests\functional;
 
-use vova07\imperavi\tests\functional\data\overrides\TestAsset;
+use aliadinov\imperavi\tests\functional\data\overrides\TestAsset;
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
 
 /**
  * @author Vasile Crudu <bazillio07@yandex.ru>
  *
- * @link https://github.com/vova07
+ * @link https://github.com/aliadinov
  */
 final class AssetTest extends TestCase
 {
@@ -38,7 +38,7 @@ final class AssetTest extends TestCase
         $this->assertArrayHasKey(JqueryAsset::className(), $view->assetBundles);
         $this->assertInstanceOf(AssetBundle::className(), $view->assetBundles[TestAsset::className()]);
 
-        $content = $view->renderFile('@vova07/imperavi/tests/data/views/rawlayout.php');
+        $content = $view->renderFile('@aliadinov/imperavi/tests/data/views/rawlayout.php');
 
         $this->assertContains('redactor.css', $content);
         $this->assertContains('redactor.min.js', $content);

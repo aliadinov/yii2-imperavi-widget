@@ -5,22 +5,22 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * @see https://github.com/vova07/yii2-imperavi-widget
+ * @see https://github.com/aliadinov/yii2-imperavi-widget
  */
 
-namespace vova07\imperavi\tests\functional;
+namespace aliadinov\imperavi\tests\functional;
 
 use ReflectionClass;
-use vova07\imperavi\tests\functional\data\bundles\TestPlugin;
-use vova07\imperavi\tests\functional\data\models\Model;
-use vova07\imperavi\tests\functional\data\overrides\TestWidget;
+use aliadinov\imperavi\tests\functional\data\bundles\TestPlugin;
+use aliadinov\imperavi\tests\functional\data\models\Model;
+use aliadinov\imperavi\tests\functional\data\overrides\TestWidget;
 use Yii;
 use yii\web\View;
 
 /**
  * @author Vasile Crudu <bazillio07@yandex.ru>
  *
- * @link https://github.com/vova07
+ * @link https://github.com/aliadinov
  */
 final class WidgetTest extends TestCase
 {
@@ -254,15 +254,15 @@ final class WidgetTest extends TestCase
         $method->invoke($widget);
         $test = [
             'class' => 'yii\i18n\PhpMessageSource',
-            'basePath' => '@vova07/imperavi/messages',
+            'basePath' => '@aliadinov/imperavi/messages',
             'forceTranslation' => true,
             'fileMap' => [
-                'vova07/imperavi' => 'imperavi.php',
+                'aliadinov/imperavi' => 'imperavi.php',
             ],
         ];
 
-        $this->assertArrayHasKey('vova07/imperavi', Yii::$app->i18n->translations);
-        $this->assertSame($test, Yii::$app->i18n->translations['vova07/imperavi']);
+        $this->assertArrayHasKey('aliadinov/imperavi', Yii::$app->i18n->translations);
+        $this->assertSame($test, Yii::$app->i18n->translations['aliadinov/imperavi']);
     }
 
     /**

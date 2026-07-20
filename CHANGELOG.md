@@ -41,37 +41,37 @@ All notable changes to `yii2-imperavi-widget` will be documented in this file.
 
 ### Changed
 - Fix for all webkit-based browsers. (bzz445)
-- Fix the file name for Ukrainian language. (vova07)
+- Fix the file name for Ukrainian language. (aliadinov)
 
 ## 2.0.3
 
 ### Changed
-- Minor documentation fixes. (vova07)
+- Minor documentation fixes. (aliadinov)
 
 ## 2.0.2
 
 ### Changed
-- Minor documentation fixes. (vova07)
+- Minor documentation fixes. (aliadinov)
 
 ## 2.0.1
 
 ### Changed
-- Fix the issue #112 related with multiple widget's instances assets registration. (vova07)
-- Adjust the documentation. (vova07)
-- Adjust the widget's actions documentation blocks. (vova07)
-- Refactor javascript custom plugins to use official registration approach. (vova07)
+- Fix the issue #112 related with multiple widget's instances assets registration. (aliadinov)
+- Adjust the documentation. (aliadinov)
+- Adjust the widget's actions documentation blocks. (aliadinov)
+- Refactor javascript custom plugins to use official registration approach. (aliadinov)
 
 ## 2.0.0
 
 ### Changed
-- Fix numerous bugs and issue related with the redactor wrapper. (vova07)
-- Rewrite tests and fix travis suites. (vova07)
-- Replace `UploadAction` with `UploadFileAction`. (vova07)
-- Replace `GetAction` with two new actions: `GetFilesAction` and `GetImagesAction`. (vova07)
-- Add delete files functionality to `file manager`. (vova07)  
-- Add delete images functionality to `image manager`. (vova07)
-- Add `translit` support to `UploadFileAction`. (vova07)
-- Add better error messages for unsuccessful requests on images and files upload. (vova07)
-- Remove `FileHelper` in favor of `BaseFilehelper`. (vova07)
-- Add localization for `image manager` and `file manager`. (vova07)
-- Add localization for `fullscreen` plugin. (vova07)  
+- Fix numerous bugs and issue related with the redactor wrapper. (aliadinov)
+- Rewrite tests and fix travis suites. (aliadinov)
+- Replace `UploadAction` with `UploadFileAction`. (aliadinov)
+- Replace `GetAction` with two new actions: `GetFilesAction` and `GetImagesAction`. (aliadinov)
+- Add delete files functionality to `file manager`. (aliadinov)  
+- Add delete images functionality to `image manager`. (aliadinov)
+- Add `translit` support to `UploadFileAction`. (aliadinov)
+- Add better error messages for unsuccessful requests on images and files upload. (aliadinov)
+- Remove `FileHelper` in favor of `BaseFilehelper`. (aliadinov)
+- Add localization for `image manager` and `file manager`. (aliadinov)
+- Add localization for `fullscreen` plugin. (aliadinov)  
