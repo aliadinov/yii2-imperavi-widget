@@ -7690,10 +7690,11 @@
 				},
 				selectElement: function(node)
 				{
+					node = node && node[0] ? node[0] : node;
+					if (!node || !node.nodeType) return false;
+
 					if (this.utils.browser('mozilla'))
 					{
-						node = node[0] || node;
-
 						var range = document.createRange();
 						range.selectNodeContents(node);
 					}
